@@ -1,0 +1,119 @@
+# Module 1 : Généralités sur les systèmes informatiques
+
+## Séquence 1 : Définitions et vocabulaire de base
+
+### 1- Information
+
+#### 1.1- Définition
+
+<div class="rounded-md border-2 border-blue-500 bg-blue-50 p-2">
+
+L'**information** est un ensemble de données ayants un sens comrpéhensible par
+l'homme
+
+</div>
+#### 1.2- Types d'informations
+
+Les informations peuvent prendre plusieurs formes, notamment :
+
+```mermaid
+graph TD
+    A(Information) --> B(Données textuelles)
+    A(Information) --> C(Images)
+    A(Information) --> D(Vidéos)
+    A(Information) --> E(Sons)
+    A(Information) --> F(...etc)
+```
+
+#### 1.3- Support et Source d'information
+
+Les informations sont stockées et transmises à travers divers supports et sources. Voici quelques exemples :
+
+- Un **Supports** d’information est le moyen qui permet de la conserver.
+  Ordinateur, Journal, caméra, CD-ROM, portable, ….
+- La **source** de l’information est le moyen qui permet de la transmettre.
+  Télévision, radio, internet…
+
+```mermaid
+graph LR
+    A[Information] --> B[Supports d'information]
+    A[Information] --> C[Sources d'information]
+    B --> D(Journal,caméra,CD-ROM, Portable)
+    C --> F(TV, Radio,Internet ...)
+```
+
+### 2- Traitement
+
+#### 2.1- Définition
+
+Le **traitement** peut être défini comme un ensemble d'opérations qui permet de transformer des données d'entrée en un résultat en suivant des règles définies.
+
+```mermaid
+graph LR
+    subgraph Traitement
+        style TraitementNode fill:#F9EBAE,stroke:#F2AB27
+        ÉtatInitial --> TraitementNode[Traitement<br\> Ensemble d'opérations]
+        TraitementNode --> ÉtatFinal
+        style ÉtatInitial fill:#8ED8B3,stroke:#32A34C
+        style ÉtatFinal fill:#8ED8B3,stroke:#32A34C
+        ÉtatInitial
+        ÉtatFinal
+    end
+
+```
+
+**Exemple :**
+
+```mermaid
+graph LR
+  A(<b>État Initial:</b><br/>Orange + Sucre) --> B(Traitement )
+  B --> C(<b>État Final:</b><br/>Jus d'orange)
+```
+
+#### 2.2- Types du Traitement
+
+```mermaid
+graph TD
+  style F fill:cyan
+  style G fill:cyan
+  style H fill:cyan
+  A(Traitement) --> B(Manuel)
+  A(Traitement) --> C(Semi-automatique)
+  A(Traitement) --> D(Automatique)
+  B --> F(Avec la main)
+  C --> G(Avec la calculatrice)
+  D -->  H(Avec l\'ordinateur)
+```
+
+### 3- Définition de l'informatique
+
+<div class="rounded border-2 border-orange-500 bg-orange-50 p-2 text-xl font-bold ">
+  Informatique = <span class="text-orange-600">Infor</span>mation + Auto
+  <span class="text-orange-600">matique</span>
+</div>
+**L’informatique** : > Est la science du traitement automatique de l’information
+à l’aide des ordinateurs.{" "}
+
+Automatique signifier sans intervention humaine.
+
+### 4- Système informatique
+
+#### Définition
+
+<div class="rounded-md border-2 border-blue-500 bg-blue-50">
+<p class="font-bold bg-blue-300 rounded-t p-1">Système Informatique</p>
+<p class="p-2">
+  Est un ensemble des moyens logiciels(**software**) et
+  matériels (**hardware**) nécessaires pour traiter
+  automatiquement l’information.
+</p>
+
+```mermaid
+graph LR
+  subgraph Système Informatique
+    A[Logiciels] <--> B[Matériel]
+
+  end
+```
+
+</div>

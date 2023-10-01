@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+ 
+  body {
+    @apply leading-6 md:text-lg;
+  }
+  img {
+    @apply w-full border rounded-xl print:block print:break-inside-avoid;
+  }
+  strong {
+    @apply text-blue-500;
+  }
+  a {
+    @apply text-blue-500;
+  }
+  table tbody tr {
+    @apply w-full ;
+  }
+  thead {
+    @apply  w-full bg-blue-500/30;
+  }
+  /* th:first-child {
+    @apply rounded-tl-lg;
+  }*/
+
+  table tbody {
+    @apply w-full ;
+  } 
+  table {
+    @apply mx-auto;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-indigo-500 capitalize;
+  }
+  h1{
+    @apply border-red-600 border p-1 rounded bg-red-50;
+  }
+  
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+} */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} 
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+h1{
+}
