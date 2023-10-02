@@ -5,7 +5,7 @@
 @layer base {
  
   body {
-    @apply leading-6 md:text-lg;
+    @apply leading-6 md:text-lg print:font-serif;
   }
   img {
     @apply w-full border rounded-xl print:block print:break-inside-avoid;
@@ -44,6 +44,10 @@
   h1{
     @apply border-red-600 border p-1 rounded bg-red-50;
   }
+
+  blockquote {
+    @apply bg-lime-50 p-2 text-slate-900 ;
+  }
   
 }
 
@@ -71,5 +75,4 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
-h1{
-}
+
